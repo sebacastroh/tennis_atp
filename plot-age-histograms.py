@@ -71,3 +71,5 @@ ttl = ax.text(.8, 0.9, '', transform = ax.transAxes, va='center')
 ani = animation.FuncAnimation(fig, prepare_animation(bar_container), len(all_ages),
                               repeat=False, blit=True)
 plt.show()
+
+ani.save('ages.gif', writer='imagemagick', fps=60)
