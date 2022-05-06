@@ -62,9 +62,9 @@ def prepare_animation(bar_container):
 
 fig, ax = plt.subplots()
 _, _, bar_container = ax.hist([], HIST_BINS, lw=1, ec='k')
-ax.set_ylim(top=18)  # set safe limit to ensure that all data is visible.
+ax.set_ylim(top=20)  # set safe limit to ensure that all data is visible.
 ax.set_xlabel('Age')
-ax.set_ylabel('# Players in the Top 100')
+ax.set_ylabel('Number of players (Top 100)')
 ax.grid()
 ttl = ax.text(.8, 0.9, '', transform = ax.transAxes, va='center')
 
